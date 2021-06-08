@@ -1,3 +1,15 @@
+
+@extends('layout')
+
+@section('titrePage')
+    Liste des Dessinateurs
+@endsection
+
+@section('titreItem')
+    <h1>Tous les dessinateurs :</h1>
+@endsection
+
+@section('contenu')
 <table class="table table-bordered table-striped">
     <thread>
         <th>Id</th>
@@ -12,3 +24,4 @@
         </tr>
     @endforeach
 </table>
+@endsection
