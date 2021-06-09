@@ -26,6 +26,9 @@
         <li class="nav-item">
           <a class="nav-link" href="https://www.senscritique.com/bd/actualite/manga">Comics</a>
         </li>
+        <li class="nav-item"> 
+          <a class="nav-link" href="{{url('/collections')}}">Nos collections</a>
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Voir..
