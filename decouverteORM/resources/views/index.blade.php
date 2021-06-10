@@ -21,12 +21,18 @@
         <thread>
             <th>Id</th>
             <th>Titre</th>
+            <th>Genre</th>
+            <th></th>
+            <th></th>
+            <th><a class="btn btn-success" href="{{ route('mangas.create') }}">Nouveau Manga </a></th>
         </thread>
         @foreach($mangas as $manga)
             <tr>
                 <td> {{ $manga->id }} </td>
-                <td> {{ $manga->titre}} </td>
+                <td><strong> {{ $manga->titre }} </strong></td>
+                <td> {{ $manga->genre }} </td>
                 <td><a class="btn btn-primary" href="{{ route('mangas.show', $manga->id) }}">Voir</a></td>
+                <td><a class="btn btn-warning" href="{{ route('mangas.edit', $manga->id)}}">Modifier</a></td>
                 <td> <form action="{{ route('mangas.destroy', $manga->id) }}" method="post"> 
                     @csrf 
                     @method('DELETE') 
